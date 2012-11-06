@@ -30,12 +30,12 @@ https://github.com/marcbuils/developpez.com_nodejs-pour-les-developpeurs-jquery/
 - Décompresser l'archive dans votre répertoire de travail
 
 ####Installation des librairies requises par l'exemple
-Liste des commandes à exécuter dans le répertoire du projet:
-- Installation de jquery
+Liste des commandes à exécuter dans le répertoire du projet.
+- Installation de jquery :
 ```
 npm install jquery
 ```
-- Installation de websocke
+- Installation de websocket :
 ```
 npm install websocket
 ```
