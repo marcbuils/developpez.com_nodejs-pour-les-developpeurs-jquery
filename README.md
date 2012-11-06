@@ -5,7 +5,7 @@ Code d'exemple pour le cours "Node.js pour les développeur jQuery".
 N'hésitez pas à le forker pour le modifier sur votre propre compte github ;)
 
 
-##Autheur
+##Auteur
 Marc Buils (marc.buils@marcbuils.fr)
 
 ##Licence
