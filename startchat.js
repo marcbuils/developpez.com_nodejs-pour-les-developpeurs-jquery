@@ -10,7 +10,7 @@
 		.httpserver()
 		.wsserver()
 		.chatserver();
-})( require("jquery"), 			// Load jQuery
-	require('./httpserver'), 	// Load your http Server
-	require('./wsserver'),		// Load your websocket server
-	require('./chatserver') );	// Load your chat services
+})( require("jquery"), 				// Load jQuery
+	require('./src/httpserver'), 	// Load your http Server
+	require('./src/wsserver'),		// Load your websocket server
+	require('./src/chatserver') );	// Load your chat services
