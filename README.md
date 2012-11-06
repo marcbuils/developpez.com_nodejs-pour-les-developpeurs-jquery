@@ -35,10 +35,10 @@ Liste des commandes à exécuter dans le répertoire du projet:
 ```
 npm install jquery
 ```
-- Installation de websocket
+- Installation de websocke
 ```
 npm install websocket
-``
+```
 
 ###Lancer l'exemple
 ####Exemple 1: hello-world.js
