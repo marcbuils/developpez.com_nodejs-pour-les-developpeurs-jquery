@@ -2,9 +2,9 @@
 	$.fn.httpserver = function( ){
 		return this.each(function(){
 			var _options = $.extend( {}, {
-				port: 80,
-				path: './www',
-				types: {
+				port: 80,				// port par defaut
+				path: './www',			// repertoire par defaut
+				types: {				// liste des types de fichier acceptes
 					"html":	'text/html'
 				}
 			}, this );
@@ -30,11 +30,11 @@
 						}
 					});
 				} )
-				.listen( _options.port ) 
+				.listen( _options.port );	// Le seveur Žcoutera le port 8090  
 			);
 		});
 	};
-})(	require('http'), 
-	require('url'), 
-	require('fs'), 
-	require('jquery') );
+})(	require('http'), 	// charge le module http
+	require('url'), 	// charge le module url
+	require('fs'), 		// charge le module file system
+	require('jquery') );// charge le module jQuery
