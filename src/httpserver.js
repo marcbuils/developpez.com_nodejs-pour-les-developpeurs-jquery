@@ -10,7 +10,7 @@
 			}, this );
 			
 			// Création du serveur HTTP
-			$(this).data('httpserver', http.createServer( function (req, res) { // fonction de callback appelée pour chaque appel de page
+			var _serveur = http.createServer( function (req, res) { // fonction de callback appelée pour chaque appel de page
 				var _pathname = url.parse(req.url).pathname;
 				var _ext = _pathname.split('/');
 				_ext = _ext[_ext.length-1].split('.');
@@ -30,8 +30,10 @@
 						}
 					});
 				} )
-				.listen( _options.port );	// Le seveur écoutera le port 8090  
-			);
+				.listen( _options.port, '127.0.0.1' );	// Le serveur écoutera le port 8090 
+			
+			// Partage le serveur
+			$(this).data( 'httpserver', _serveur );
 		});
 	};
 })(	require('http'), 	// charge le module http

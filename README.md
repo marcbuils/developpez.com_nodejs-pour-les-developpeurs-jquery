@@ -46,7 +46,7 @@ hello-world.js est un exemple de serveur basique écrit pour node.js.
 
 Pour l'exécuter, taper la commande suivante dans le répertoire du projet:
 ```
-node hello-world
+node Exemple1_hello-world/hello-world
 ```
 
 ####Exemple 2: startchat.js
@@ -54,7 +54,7 @@ startchat.js est un exemple de system de messagerie écrit pour node.js avec jQu
 
 Pour l'exécuter, taper la commande suivante dans le répertoire du projet:
 ```
-node startchat
+node Exemple2_notre-premier-serveur-web/startchat
 ```
 
 ####Exemple 3: startmultichat.js

@@ -9,5 +9,5 @@
 			// Le ficier retourné contient le texte 'Hello World'
 			res.end('Hello World\n');
 		} )
-		.listen(1337);	 // Le seveur écoutera le port 1337  
+		.listen( 1337, '127.0.0.1' );	 // Le seveur écoutera le port 1337  
 })( require('http') /* inclue le module http */ );
