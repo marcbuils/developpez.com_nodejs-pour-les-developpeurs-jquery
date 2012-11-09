@@ -49,7 +49,23 @@ Pour l'exécuter, taper la commande suivante dans le répertoire du projet:
 node hello-world
 ```
 
-####Exemple 2: startchat.js
+####Exemple 2: Notre premier serveur web
+starthttp.js est un exemple de serveur web écrit pour node.js avec jQuery
+
+Pour l'exécuter, taper la commande suivante dans le répertoire du projet:
+```
+node starthttp
+```
+
+####Exemple 3: Notre premier server websocket
+startws.js est un exemple de serveur websocket écrit pour node.js avec jQuery
+
+Pour l'exécuter, taper la commande suivante dans le répertoire du projet:
+```
+node startws
+```
+
+####Exemple 4: Notre premier chat
 startchat.js est un exemple de system de messagerie écrit pour node.js avec jQuery
 
 Pour l'exécuter, taper la commande suivante dans le répertoire du projet:
@@ -57,7 +73,7 @@ Pour l'exécuter, taper la commande suivante dans le répertoire du projet:
 node startchat
 ```
 
-####Exemple 3: startmultichat.js
+####Exemple 5: startmultichat.js
 startmultichat.js est un exemple de plusieurs system de messagerie écrit pour node.js avec jQuery
 
 Attention: Par défaut ce fichier pointe sur des répertoire inexistant. Il n'est pas prévu pour être exécuté mais uniquement pour lire étudier le code source.
