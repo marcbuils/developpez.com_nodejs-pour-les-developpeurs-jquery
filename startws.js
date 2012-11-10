@@ -1,6 +1,6 @@
 ;(function( $ ){
 	$({
-		port: 	8090,
+		port: 	8091,
 		types: {
 			"js":	'text/js',
 			"html":	'text/html'
@@ -8,16 +8,15 @@
 	})
 		.httpserver()
 		.wsserver()
-		.on('request', function( _connection ){
+		.on('request', function( event, _connection ){
+			console.log('Nouvelle connexion');
+			
 			$( _connection )
-				.on('open', function(){
-					console.log('Nouvelle connexion');
-				})
 				.on('message', function(event, message){
 					console.log('Nouveau message: %s', message);
 				})
 				.on('close', function(){
-					console.log('Une connexion s\'est fermée');
+					console.log('Une connexion s\'est fermee');
 				});
 		});
 })( require('jquery'), 				// Load jQuery

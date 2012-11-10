@@ -47,7 +47,7 @@
 				});
 
 			} catch( e ) {
-				console.error( "Erreur du plugin services: %s", e )
+				console.error( "Erreur du plugin wsserver: %s", e )
 			}
 		});
 	}

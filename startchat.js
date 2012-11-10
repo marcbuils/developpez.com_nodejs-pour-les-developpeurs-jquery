@@ -1,6 +1,6 @@
 ;(function( $ ){
 	$({
-		port: 	8090,
+		port: 	8092,
 		path: './www',
 		types: {
 			"js":	'text/js',
