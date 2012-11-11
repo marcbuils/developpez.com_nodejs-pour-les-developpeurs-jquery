@@ -18,7 +18,7 @@
 		.httpserver()
 		.wsserver()
 		.chatserver();
-})( require('jquery'), 				// Load jQuery
-	require('./src/httpserver'), 	// Load your http Server
-	require('./src/wsserver'),		// Load your websocket server
-	require('./src/chatserver') );	// Load your chat services
+})( require('jquery'), 						// Load jQuery
+	require('./src/jquery.httpserver'), 	// Load your http Server
+	require('./src/jquery.wsserver'),		// Load your websocket server
+	require('./src/jquery.chatserver') );	// Load your chat services

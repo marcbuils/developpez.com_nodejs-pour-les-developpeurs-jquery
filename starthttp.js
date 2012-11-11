@@ -4,4 +4,4 @@
 	})
 		.httpserver();
 })( require('jquery'), 				// Load jQuery
-	require('./src/httpserver') );	// Load your web server
+	require('./src/jquery.httpserver') );	// Load your web server
