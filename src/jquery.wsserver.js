@@ -41,6 +41,9 @@
 							        }
 							})
 							.on('close', function(connection) {
+								// suppression de la connection de la liste
+								_connections.list.splice(_connections.list.indexOf(_connection), 1);
+								
 							    // diffuse la fermeture de connection
 								$(_connection).trigger('close');
 							});

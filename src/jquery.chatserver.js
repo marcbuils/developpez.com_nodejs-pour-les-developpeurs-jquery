@@ -28,8 +28,7 @@
 					})
 					.on('close', function(__event){
 						var _connections = $_this.data('connections');
-						
-						_connections.list.splice(_connections.list.indexOf(_connection), 1);
+
 						$( _connections.list )
 	        				.trigger( 'chatclose', [$(_connection).data('login')] );
 					})
