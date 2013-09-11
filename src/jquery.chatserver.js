@@ -6,10 +6,6 @@
 			// s'abonne au nouveaux clients
 			$_this.on('request', function(_event, _connection){
 				$( _connection )
-					// on vient de se connecter
-					.on('open', function(__event){
-						// rien a faire
-					})
 					// on recoit un message de l'IHM
 					.on('message', function(__event, _message){
 						// on parse la reponse avant de la traiter
@@ -34,7 +30,7 @@
 					})
 					// un nouvel utilisateur vient d'arriver
 					.on('chatopen', function(__event, _login){
-						// on envoi l'information ˆ l'IHM
+						// on envoi l'information ï¿½ l'IHM
 						_connection.sendUTF( JSON.stringify({
 							type: 'chatopen', 
 							login: _login
@@ -42,7 +38,7 @@
 					})
 					// on recoit un message d'un autre utilisateur du chat
 					.on('chatmessage', function(__event, _login, _message){
-						// on envoi l'information ˆ l'IHM
+						// on envoi l'information ï¿½ l'IHM
 						_connection.sendUTF( JSON.stringify({
 							type: 'chatmessage', 
 							login: _login, 
@@ -51,7 +47,7 @@
 					})
 					// un utilisateur vient de partir
 					.on('chatclose', function(__event, _login){
-						// on envoi l'information ˆ l'IHM
+						// on envoi l'information ï¿½ l'IHM
 						_connection.sendUTF( JSON.stringify({
 							type: 'chatclose', 
 							login: _login
