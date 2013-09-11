@@ -12,12 +12,12 @@
 				        	var _data = JSON.parse(_message);
 					        	
 				        	// l'utilisateur vient de se connecter sur l'IHM
-				        	if ( _data.type == 'open' ){
+				        	if ( _data.type === 'open' ){
 				        		$( _connection ).data( 'login', _data.login );			// on enregistre nom login
 					        		
 				        		$( $_this.data('connections').list )
 				        			.trigger( 'chatopen', [_data.login] );	
-				        	}else if ( _data.type == 'message' ){
+				        	}else if ( _data.type === 'message' ){
 				        		$( $_this.data('connections').list )
 				        			.trigger( 'chatmessage', [$(_connection).data('login'), _data.message] );
 				        	}
