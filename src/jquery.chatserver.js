@@ -9,24 +9,24 @@
 					// on recoit un message de l'IHM
 					.on('message', function(__event, _message){
 						// on parse la reponse avant de la traiter
-			        	var _data = JSON.parse(_message);
-				        	
-			        	// l'utilisateur vient de se connecter sur l'IHM
-			        	if ( _data.type == 'open' ){
-			        		$( _connection ).data( 'login', _data.login );			// on enregistre nom login
-				        		
-			        		$( $_this.data('connections').list )
-			        			.trigger( 'chatopen', [_data.login] );	
-			        	}else if ( _data.type == 'message' ){
-			        		$( $_this.data('connections').list )
-			        			.trigger( 'chatmessage', [$(_connection).data('login'), _data.message] );
-			        	}
+				        	var _data = JSON.parse(_message);
+					        	
+				        	// l'utilisateur vient de se connecter sur l'IHM
+				        	if ( _data.type == 'open' ){
+				        		$( _connection ).data( 'login', _data.login );			// on enregistre nom login
+					        		
+				        		$( $_this.data('connections').list )
+				        			.trigger( 'chatopen', [_data.login] );	
+				        	}else if ( _data.type == 'message' ){
+				        		$( $_this.data('connections').list )
+				        			.trigger( 'chatmessage', [$(_connection).data('login'), _data.message] );
+				        	}
 					})
 					.on('close', function(__event){
 						var _connections = $_this.data('connections');
 
 						$( _connections.list )
-	        				.trigger( 'chatclose', [$(_connection).data('login')] );
+	        					.trigger( 'chatclose', [$(_connection).data('login')] );
 					})
 					// un nouvel utilisateur vient d'arriver
 					.on('chatopen', function(__event, _login){
